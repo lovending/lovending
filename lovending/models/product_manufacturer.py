@@ -13,5 +13,5 @@ class ProductManufacturer(models.Model):
     _description = "Product manufacturer"
     _order = "name"
 
-    name = fields.Char("Nombre del fabricante", required=True)
-    description = fields.Text(translate=True)
+    name = fields.Char("Nombre", required=True)
+    description = fields.Text("Descripción")
