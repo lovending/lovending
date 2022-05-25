@@ -13,14 +13,14 @@ class ProductBrand(models.Model):
     _description = "Product Brand"
     _order = "name"
 
-    name = fields.Char("Brand Name", required=True)
-    description = fields.Text(translate=True)
-    logo = fields.Binary("Logo File")
+    name = fields.Char("Nombre", required=True)
+    description = fields.Text("Descripción")
+    logo = fields.Binary("Logo")
     product_ids = fields.One2many(
-        "product.template", "product_brand_id", string="Brand Products"
+        "product.template", "product_brand_id", string="SAL"
     )
     products_count = fields.Integer(
-        string="Number of products", compute="_compute_products_count"
+        string="Número de Productos", compute="_compute_products_count"
     )
 
     @api.depends("product_ids")
