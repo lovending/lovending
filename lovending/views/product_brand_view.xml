@@ -210,7 +210,7 @@
         <field name="view_mode">tree,form,kanban</field>
     </record>
     <menuitem
-        name="Marca de los productos"
+        name="SAL"
         id="menu_product_brand"
         action="action_product_brand"
         parent="stock.menu_product_in_config_stock"
